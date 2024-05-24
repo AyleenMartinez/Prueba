@@ -52,8 +52,6 @@
   padding: 10px;
 }
 
-
-
 .footer {
   background-color: rgb(203, 175, 218);
   justify-content: center;
@@ -63,14 +61,16 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #333;
 }
 
@@ -136,27 +136,45 @@ input[type="radio"] {
 }
 
 .tab-wrap label:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 10px;
   left: 0;
   z-index: -1;
-  border: .1em solid #aaa;
+  border: 0.1em solid #aaa;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
-  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(229, 229, 229, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
 
   -webkit-transform: perspective(5px) rotateX(2deg);
-    transform: perspective(5px) rotateX(2deg);
-    
+  transform: perspective(5px) rotateX(2deg);
+
   -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
 }
 
 .tab-wrap .tab-content {
@@ -170,7 +188,7 @@ input[type="radio"] {
   padding: 20px;
   background: #fff;
   border-radius: 3px;
-  border: .1em solid #aaa;
+  border: 0.1em solid #aaa;
   border-top: 0;
 }
 
@@ -184,6 +202,6 @@ input[type="radio"] {
   background: #fff;
 }
 
-.tab-wrap [id^="tab"]:checked ~ .tab-content{
+.tab-wrap [id^="tab"]:checked ~ .tab-content {
   display: block;
 }
