@@ -8,6 +8,7 @@ header {
   color: white;
   padding: 30px 0;
   text-align: center;
+
 }
 
 .perfil {
@@ -15,7 +16,10 @@ header {
 }
 
 
-
+.linkcolor{
+  color: black;
+  text-decoration: none;
+}
 
 
 
